@@ -12,10 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('blog_posts', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement();
             $table->text('title');  // Title of our blog post          
             $table->text('body');   // Body of our blog post                  
             $table->text('user_id'); // user_id of our blog post author
+            $table->Blob('image');
             $table->timestamps();
         });
     }

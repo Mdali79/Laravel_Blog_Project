@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-12 text-center pt-5">
                 <h1 class="display-one mt-5">{{ config('app.name') }}</h1>
-                <p> click the button below to see them</p>
+                <p> click the button bellow to see all the blogs</p>
                 <br>
                 <a href="/blog" class="btn btn-outline-primary">Show Blog</a>
             </div>

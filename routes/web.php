@@ -33,4 +33,4 @@ Route::put('/blog/{blogPost}', [\App\Http\Controllers\BlogPostController::class,
 
 Route::delete('/blog/{blogPost}', [\App\Http\Controllers\BlogPostController::class, 'destroy'])->name('blog.destroy');
 
-
+Route::get('/blog/{blogPost}/details', [\App\Http\Controllers\BlogPostController::class, 'read_more']);

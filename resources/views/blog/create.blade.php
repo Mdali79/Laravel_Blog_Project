@@ -16,9 +16,20 @@
                         @csrf
                         <div class="row">
                             <div class="control-group col-12">
+                                <label for="image">Post Image</label>
+                                <input type="file" id="image" class="form-control" name="image"
+                                       placeholder="Enter Post Image" required>
+                            </div>
+                            <div class="control-group col-12">
                                 <label for="title">Post Title</label>
                                 <input type="text" id="title" class="form-control" name="title"
                                        placeholder="Enter Post Title" required>
+                            </div>
+                         
+                            <div class="control-group col-12">
+                                <label for="title">Post description</label>
+                                <input type="text" id="description" class="form-control" name="description"
+                                       placeholder="Enter Post Description" required>
                             </div>
                             <div class="control-group col-12 mt-2">
                                 <label for="body">Post Body</label>

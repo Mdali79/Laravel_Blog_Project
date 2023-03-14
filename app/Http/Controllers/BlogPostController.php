@@ -29,6 +29,9 @@ public function create()
         $newPost = BlogPost::create([
             'title' => $request->title,
             'body' => $request->body,
+            'description'=> $request->description,
+            'image'=>$request->image,
+        
             'user_id' => 1
         ]);
 
@@ -58,6 +61,8 @@ public function create()
         //save the edited post
         $blogPost->update([
             'title' => $request->title,
+            'description'=>$request->description,
+            'image'=>$request->image,
             'body' => $request->body
         ]);
 
@@ -72,5 +77,14 @@ public function create()
         $blogPost->delete();
 
         return redirect('/blog');
+    }
+
+    public function read_more(BlogPost $blogPost)
+    {
+
+        return view('blog.details', [
+            'post' => $blogPost,
+        ]);
+
     }
 }

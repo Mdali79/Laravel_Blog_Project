@@ -17,9 +17,18 @@
                         @method('PUT')
                         <div class="row">
                             <div class="control-group col-12">
+                                <label for="image">Post Image</label>
+                                <input type="file" id="image" class="form-control" name="image"
+                                       placeholder="Enter Post Image" value="{{ $post->image }}" required>
+                            <div class="control-group col-12">
                                 <label for="title">Post Title</label>
                                 <input type="text" id="title" class="form-control" name="title"
                                        placeholder="Enter Post Title" value="{{ $post->title }}" required>
+                            </div>
+                            <div class="control-group col-12">
+                                <label for="title">Post Description</label>
+                                <input type="text" id="description" class="form-control" name="description"
+                                       placeholder="Enter Post Description" value="{{ $post->description }}" required>
                             </div>
                             <div class="control-group col-12 mt-2">
                                 <label for="body">Post Body</label>

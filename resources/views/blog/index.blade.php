@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 pt-2">
-                <h1 class="display-one">Our Blog!</h1>
-                <p>Click on a post to read!</p>
+                <h1 class="display-one">These are Personal Blogs</h1>
+                <p>Click any of the blog you want to read</p>
                 @forelse($posts as $post)
                     <ul>
                         <li><a href="./blog/{{ $post->id }}">{{ ucfirst($post->title) }}</a></li>

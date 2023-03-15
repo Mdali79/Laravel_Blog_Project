@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::table('blog_posts', function (Blueprint $table) {
             //
-            $table->text('description')->default('')->nullable();
-
+            $table->text('user_id');
         });
     }
 
@@ -25,7 +24,7 @@ return new class extends Migration
     {
         Schema::table('blog_posts', function (Blueprint $table) {
             //
-            $table->dropColumn('description');
+            $table->text('user_id');
         });
     }
 };

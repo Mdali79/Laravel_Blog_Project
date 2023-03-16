@@ -8,7 +8,8 @@
                 <p>Click any of the blog you want to read</p>
                 @forelse($posts as $post)
                     <ul>
-                        <li><a href="./blog/{{ $post->id }}">{{ ucfirst($post->title) }}</a></li>
+                        <li ><a href="./blog/{{ $post->id }}"  class="list-group-item list-group-item-action list-group-item-primary">{{ ucfirst($post->title) }}</a></li>
+ 
                     </ul>
                 @empty
                     <p class="text-warning">No blog Posts available</p>
@@ -25,5 +26,7 @@
                 </div>
             </div>
         </div>
+
+       
     </div>
 @endsection
